@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1EDC9BD2-5B5B-40BB-8A05-C989364F2494}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GCCSSDK</RootNamespace>
+    <AssemblyName>GCCSSDK</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\GCCSSDK.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\GCCSSDK.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GrandCloud.CS\CSClientFactory.cs" />
+    <Compile Include="GrandCloud.CS\CSCredentials.cs" />
+    <Compile Include="GrandCloud.CS\Enumerations.cs" />
+    <Compile Include="GrandCloud.CS\GrandCloudCS.cs" />
+    <Compile Include="GrandCloud.CS\GrandCloudCSClient.cs" />
+    <Compile Include="GrandCloud.CS\GrandCloudCSConfig.cs" />
+    <Compile Include="GrandCloud.CS\GrandCloudCSException.cs" />
+    <Compile Include="GrandCloud.CS\GrandCloudServiceException.cs" />
+    <Compile Include="GrandCloud.CS\Model\AbortMultipartUploadRequest.cs" />
+    <Compile Include="GrandCloud.CS\Model\AbortMultipartUploadResponse.cs" />
+    <Compile Include="GrandCloud.CS\Model\CompleteMultipartUploadRequest.cs" />
+    <Compile Include="GrandCloud.CS\Model\CompleteMultipartUploadResponse.cs" />
+    <Compile Include="GrandCloud.CS\Model\CSBucket.cs" />
+    <Compile Include="GrandCloud.CS\Model\CSEnumerations.cs" />
+    <Compile Include="GrandCloud.CS\Model\CSError.cs" />
+    <Compile Include="GrandCloud.CS\Model\CSObject.cs" />
+    <Compile Include="GrandCloud.CS\Model\CSRequest.cs" />
+    <Compile Include="GrandCloud.CS\Model\CSResponse.cs" />
+    <Compile Include="GrandCloud.CS\Model\DeleteBucketPolicyRequest.cs" />
+    <Compile Include="GrandCloud.CS\Model\DeleteBucketPolicyResponse.cs" />
+    <Compile Include="GrandCloud.CS\Model\DeleteBucketRequest.cs" />
+    <Compile Include="GrandCloud.CS\Model\DeleteBucketResponse.cs" />
+    <Compile Include="GrandCloud.CS\Model\DeleteObjectRequest.cs" />
+    <Compile Include="GrandCloud.CS\Model\DeleteObjectResponse.cs" />
+    <Compile Include="GrandCloud.CS\Model\GetBucketLocationRequest.cs" />
+    <Compile Include="GrandCloud.CS\Model\GetBucketLocationResponse.cs" />
+    <Compile Include="GrandCloud.CS\Model\GetBucketPolicyRequest.cs" />
+    <Compile Include="GrandCloud.CS\Model\GetBucketPolicyResponse.cs" />
+    <Compile Include="GrandCloud.CS\Model\GetObjectMetadataRequest.cs" />
+    <Compile Include="GrandCloud.CS\Model\GetObjectMetadataResponse.cs" />
+    <Compile Include="GrandCloud.CS\Model\GetObjectRequest.cs" />
+    <Compile Include="GrandCloud.CS\Model\GetObjectResponse.cs" />
+    <Compile Include="GrandCloud.CS\Model\GetPreSignedUrlRequest.cs" />
+    <Compile Include="GrandCloud.CS\Model\InitiateMultipartUploadRequest.cs" />
+    <Compile Include="GrandCloud.CS\Model\InitiateMultipartUploadResponse.cs" />
+    <Compile Include="GrandCloud.CS\Model\ListBucketsRequest.cs" />
+    <Compile Include="GrandCloud.CS\Model\ListBucketsResponse.cs" />
+    <Compile Include="GrandCloud.CS\Model\ListMultipartUploadsRequest.cs" />
+    <Compile Include="GrandCloud.CS\Model\ListMultipartUploadsResponse.cs" />
+    <Compile Include="GrandCloud.CS\Model\ListObjectsRequest.cs" />
+    <Compile Include="GrandCloud.CS\Model\ListObjectsResponse.cs" />
+    <Compile Include="GrandCloud.CS\Model\ListPartsRequest.cs" />
+    <Compile Include="GrandCloud.CS\Model\ListPartsResponse.cs" />
+    <Compile Include="GrandCloud.CS\Model\MultiPartUpload.cs" />
+    <Compile Include="GrandCloud.CS\Model\PartDetail.cs" />
+    <Compile Include="GrandCloud.CS\Model\PartEtag.cs" />
+    <Compile Include="GrandCloud.CS\Model\PartStreamWrapper.cs" />
+    <Compile Include="GrandCloud.CS\Model\PutBucketPolicyRequest.cs" />
+    <Compile Include="GrandCloud.CS\Model\PutBucketPolicyResponse.cs" />
+    <Compile Include="GrandCloud.CS\Model\PutBucketRequest.cs" />
+    <Compile Include="GrandCloud.CS\Model\PutBucketResponse.cs" />
+    <Compile Include="GrandCloud.CS\Model\PutObjectRequest.cs" />
+    <Compile Include="GrandCloud.CS\Model\PutObjectResponse.cs" />
+    <Compile Include="GrandCloud.CS\Model\ResponseHeaderOverrides.cs" />
+    <Compile Include="GrandCloud.CS\Model\TransferProgressArgs.cs" />
+    <Compile Include="GrandCloud.CS\Model\Tuple.cs" />
+    <Compile Include="GrandCloud.CS\Model\UploadPartRequest.cs" />
+    <Compile Include="GrandCloud.CS\Model\UploadPartResponse.cs" />
+    <Compile Include="GrandCloud.CS\Util\CSConstants.cs" />
+    <Compile Include="GrandCloud.CS\Util\CSSDKUtils.cs" />
+    <Compile Include="GrandCloud.CS\Util\GrandCloudCSUtil.cs" />
+    <Compile Include="GrandCloud.CS\Util\Logger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GrandCloud.CS\Model\CompleteMultipartUploadResponse.xslt" />
+    <EmbeddedResource Include="GrandCloud.CS\Model\CSErrorResponse.xslt" />
+    <EmbeddedResource Include="GrandCloud.CS\Model\GetBucketLocationResponse.xslt" />
+    <EmbeddedResource Include="GrandCloud.CS\Model\InitiateMultipartUploadResponse.xslt" />
+    <EmbeddedResource Include="GrandCloud.CS\Model\ListAllBucketsResponse.xslt" />
+    <EmbeddedResource Include="GrandCloud.CS\Model\ListMultipartUploadsResponse.xslt" />
+    <EmbeddedResource Include="GrandCloud.CS\Model\ListObjectsResponse.xslt" />
+    <EmbeddedResource Include="GrandCloud.CS\Model\ListPartsResponse.xslt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
