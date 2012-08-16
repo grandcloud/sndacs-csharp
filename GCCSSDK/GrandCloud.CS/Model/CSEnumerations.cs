@@ -89,30 +89,4 @@ namespace GrandCloud.CS.Model
         DELETE
     }
 
-    /// <summary>
-    /// Specifies the Storage Class of of an CS object. Possible values
-    /// are: <list type="bullet">
-    /// <item>ReducedRedundancy: provides a 99.99% durability guarantee</item>
-    /// <item>Standard: provides a 99.999999999% durability guarantee</item>
-    /// </list>
-    /// </summary>
-    public enum CSStorageClass
-    {
-        /// <summary>
-        /// The STANDARD storage class, which is the default
-        /// storage class for CS objects. Provides a 99.999999999%
-        /// durability guarantee.
-        /// </summary>
-        Standard,
-        /// <summary>
-        /// The REDUCED_REDUNDANCY storage class for CS objects. This
-        /// provides a reduced (99.99%) durability guarantee at a lower
-        /// cost as compared to the STANDARD storage class. Use this
-        /// storage class for non-mission critical data or for data 
-        /// that doesn’t require the higher level of durability that CS
-        /// provides with the STANDARD storage class.
-        /// </summary>
-        ReducedRedundancy
-    }
-
 }

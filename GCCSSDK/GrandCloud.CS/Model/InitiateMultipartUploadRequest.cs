@@ -17,7 +17,6 @@ namespace GrandCloud.CS.Model
         private string key;
         private string contentType;
         internal NameValueCollection metaData;
-        private CSStorageClass storageClass;
         
 
         #region BucketName
@@ -194,47 +193,6 @@ namespace GrandCloud.CS.Model
             }
 
             metaData.Remove(key);
-        }
-
-        #endregion
-
-        #region StorageClass
-
-        /// <summary>
-        /// Gets and sets the StorageClass property.
-        /// Default: CSStorageClass.Standard. Set this property
-        /// only if you want reduced redundancy for this object.
-        /// Please refer to 
-        /// <see cref="T:GrandCloud.CS.Model.CSStorageClass"/> for
-        /// information on CS Storage Classes.
-        /// </summary>
-        public CSStorageClass StorageClass
-        {
-            get { return this.storageClass; }
-            set
-            {
-                if (value >= CSStorageClass.Standard &&
-                    value <= CSStorageClass.ReducedRedundancy)
-                {
-                    this.storageClass = value;
-                }
-            }
-        }
-
-        /// <summary>
-        /// Sets the StorageClass property for this request.
-        /// Default: CSStorageClass.Standard. Set this property
-        /// only if you want reduced redundancy for this object.
-        /// Please refer to 
-        /// <see cref="T:GrandCloud.CS.Model.CSStorageClass"/> for
-        /// information on CS Storage Classes.
-        /// </summary>
-        /// <param name="sClass">The Storage Class to be set on the object</param>
-        /// <returns>The request with the StorageClass set</returns>
-        public InitiateMultipartUploadRequest WithStorageClass(CSStorageClass sClass)
-        {
-            this.storageClass = sClass;
-            return this;
         }
 
         #endregion

@@ -57,9 +57,6 @@
       <UploadId>
         <xsl:value-of select="UploadId"/>
       </UploadId>
-      <StorageClass>
-        <xsl:value-of select="StorageClass"/>
-      </StorageClass>
       <Initiated>
         <xsl:value-of select="Initiated"/>
       </Initiated> 

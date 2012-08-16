@@ -13,9 +13,6 @@
       <UploadId>
         <xsl:value-of select="UploadId"/>
       </UploadId>
-      <StorageClass>
-        <xsl:value-of select="StorageClass"/>
-      </StorageClass>
       <PartNumberMarker>
         <xsl:value-of select="PartNumberMarker"/>
       </PartNumberMarker>

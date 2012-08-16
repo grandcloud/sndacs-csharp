@@ -25,7 +25,6 @@ namespace GrandCloud.CS.Util
         internal const string RequestIdHeader = "x-snda-request-id";        
         internal const string DateHeader = "x-snda-date";
         internal const string AuthorizationHeader = "Authorization";      
-        internal const string StorageClassHeader = "x-snda-storage-class";
 
 
         // Accepted HTTP Verbs
@@ -49,9 +48,6 @@ namespace GrandCloud.CS.Util
         internal const string REGION_HUADONG_1 = "huadong-1";
         internal const string REGION_HUABEI_1 = "huabei-1";
 
-
-        internal static readonly string[] StorageClasses = {"STANDARD",
-                                                "REDUCED_REDUNDANCY"};
 
         // Error Codes
         internal const string NoSuchBucketPolicy = "NoSuchBucketPolicy";

@@ -2281,9 +2281,7 @@ namespace GrandCloud.CS
                     webHeaders[prefixedKey] = request.metaData[key];
                 }
             }
-
-            // Add the storage class header
-            webHeaders[CSConstants.StorageClassHeader] = CSConstants.StorageClasses[(int)request.StorageClass];
+          
 
             // Finally, add the CS specific parameters and headers
             request.RequestDestinationBucket = request.BucketName;
@@ -2450,9 +2448,6 @@ namespace GrandCloud.CS
                     }
                 }
             }
-     
-            // Add the storage class header
-            webHeaders[CSConstants.StorageClassHeader] = CSConstants.StorageClasses[(int)request.StorageClass];
 
             // Finally, add the CS specific parameters and headers
             request.RequestDestinationBucket = request.BucketName;

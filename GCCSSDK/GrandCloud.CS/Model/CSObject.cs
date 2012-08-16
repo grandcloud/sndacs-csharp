@@ -20,7 +20,6 @@ namespace GrandCloud.CS.Model
         private DateTime? lastModified;
         private string eTag;
         private long size;
-        private string storageClass;
         private string bucketName;
 
         #endregion
@@ -42,7 +41,6 @@ namespace GrandCloud.CS.Model
             sb.Append(String.Concat(", LastModified:", LastModified));
             sb.Append(String.Concat(", ETag:", ETag));
             sb.Append(String.Concat(", Size:", Size));
-            sb.Append(String.Concat(", StorageClass:", StorageClass));
             sb.Append("}");
 
             return sb.ToString();
@@ -172,27 +170,5 @@ namespace GrandCloud.CS.Model
 
         #endregion
 
-        #region StorageClass
-
-        /// <summary>
-        /// Gets and sets the StorageClass property.
-        /// </summary>
-        [XmlElementAttribute(ElementName = "StorageClass")]
-        public string StorageClass
-        {
-            get { return this.storageClass; }
-            set { this.storageClass = value; }
-        }
-
-        /// <summary>
-        /// Checks if StorageClass property is set.
-        /// </summary>
-        /// <returns>true if StorageClass property is set.</returns>
-        internal bool IsSetStorageClass()
-        {
-            return !System.String.IsNullOrEmpty(this.storageClass);
-        }
-
-        #endregion
     }
 }

@@ -14,7 +14,6 @@ namespace GrandCloud.CS.Model
         private string bucketName;
         private string key;
         private string uploadId;
-        private string storageClass;
         private string partNumberMarker;
         private string nextPartNumberMarker;
         private int maxParts;
@@ -46,15 +45,6 @@ namespace GrandCloud.CS.Model
         {
             get { return this.uploadId; }
             set { this.uploadId = value; }
-        }
-
-        /// <summary>
-        /// Gets and sets the class of storage used to store the uploaded object.
-        /// </summary>
-        public string StorageClass
-        {
-            get { return this.storageClass; }
-            set { this.storageClass = value; }
         }
 
         /// <summary>

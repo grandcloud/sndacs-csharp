@@ -12,7 +12,6 @@ namespace GrandCloud.CS.Model
     {
         private string key;
         private string uploadId;
-        private string storageClass;
         private DateTime initiated;
 
         /// <summary>
@@ -31,16 +30,6 @@ namespace GrandCloud.CS.Model
         {
             get { return this.uploadId; }
             set { this.uploadId = value; }
-        }
-
-        /// <summary>
-        /// Gets and sets the class of storage that will be used to store the object when multipart
-        /// upload is complete.
-        /// </summary>
-        public string StorageClass
-        {
-            get { return this.storageClass; }
-            set { this.storageClass = value; }
         }
 
         /// <summary>
