@@ -41,7 +41,7 @@ namespace GrandCloud.CS.Util
 
         // Location Constraint strings
         // These strings need to be ordered like the CSRegion enumeration
-        internal static readonly string[] LocationConstraints = {"",
+        internal static readonly string[] LocationConstraints = {"huabei-1",
                                                 "huadong-1",
                                                 "huabei-1"};
 
